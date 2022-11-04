@@ -5,6 +5,14 @@ WORKDIR /app
 
 # Install requirements for add-on
 # (alpine image)
+RUN apk add --no-cache python3
+RUN apk add --no-cache py-pip 
+RUN apk add --no-cache bluez 
+RUN apk add --no-cache git
+
+#RUN \
+#  apk add --no-cache \
+#    python3 bluez py-pip git
 
 
 # py3-pip
